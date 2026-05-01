@@ -20,6 +20,12 @@ sudo cp -r ./railway-nvr-stack /opt/mnvr-api/
 sudo bash /opt/mnvr-api/scripts/install.sh
 Then point mnvrd's mnvr.conf at the same Postgres (db_path) and same storage_base / hls_base. Visit http://<host>/, log in as admin / Admin@123, change the password.
 
+
+
+
+
+i Want you to make it a professional looking and working website, see firstly in camera section where there is grid of cameras have options of display as 1*1,2*2,3*3and 4*4, and update the dashboard to make it actually work, the website has lots of placeholder code i want to make it 100% working, the engine or the logic for this is in nvr-core-main, i want you to integrate both of these codebases 100% and there is a section where we are adding image for object detection and all other ai features, remove this and do the inbuilt ai feature detection while playing the videos on the frontend by taking the videos stored in storage/hls and storage/recordings, you have to take the exact path from the db and constantly get via the apis, and there are 2 streams from the nvr core, first for recording and the second for ai features, make sure all the camera grids display the live stream of cameras, you youself figure out how to do, and the segmented videos are also recorded, do any other relevant changes, but please ensure that every single feature on the frontend is correctly linked with backend and the nvr core, test it thorughly and give me the updated code in downloadable format no matter how much is done, just give the code
+
 Honest caveats (so nothing surprises you):
 
 I can't run Postgres / mnvrd / GStreamer here, so I verified Node syntax on every file but did not execute end-to-end against live cameras — that requires your VM.
